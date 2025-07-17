@@ -12,8 +12,47 @@ body {
   --primary-color: rgb(255, 89, 89);
   --secondary-color: rgb(255, 173, 90);
 }
+header,
 main {
   max-width: 1128px;
-  margin: 0 auto;
+  margin: 8rem auto;
 }
 /* Common Style End */
+
+/* Header Section Start  */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_heading {
+  font-size: 4rem;
+  font-family: Yeseva One;
+  border-left: 0.3rem solid;
+  border-color: var(--primary-color);
+  padding-left: .5rem
+  ;
+}
+.header_heading span {
+  font-size: 4rem;
+  color: var(--secondary-color);
+}
+.header_description {
+  font-size: 1rem;
+  font-family: poppins;
+  margin: 1rem 0;
+}
+.header_button {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.8rem 2.1rem;
+  border: none;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+.header_button_scroll {
+  color: rgb(67, 67, 67);
+  font-weight: 400;
+}
+/* Header Section End  */
