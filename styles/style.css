@@ -15,7 +15,7 @@ body {
 header,
 main {
   max-width: 1128px;
-  margin: 8rem auto;
+  margin: 0 auto;
 }
 /* Common Style End */
 
@@ -24,14 +24,14 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 .header_heading {
   font-size: 4rem;
   font-family: Yeseva One;
   border-left: 0.3rem solid;
   border-color: var(--primary-color);
-  padding-left: .5rem
-  ;
+  padding-left: 0.5rem;
 }
 .header_heading span {
   font-size: 4rem;
@@ -55,4 +55,60 @@ main {
   color: rgb(67, 67, 67);
   font-weight: 400;
 }
+.header_image img {
+  width: 100%;
+  height: auto;
+}
 /* Header Section End  */
+
+/* Responsive Layout Start */
+
+/* Small devices  */
+@media only screen and (max-width: 576px) {
+  .header_container {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+  }
+  .header_heading {
+    font-size: 2.5rem;
+    font-family: Yeseva One;
+    border-left: 0.3rem solid;
+    border-color: var(--primary-color);
+  }
+  .header_heading span {
+    font-size: 2rem;
+  }
+  .header_image img {
+    width: 70%;
+    height: auto;
+  }
+  .header_heading {
+    border-left: none;
+  }
+  .header_description {
+    padding: 0.8rem;
+    text-align: justify;
+  }
+}
+
+/* Medium devices  */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .header_container {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+  .header_heading {
+    font-size: 2rem;
+  }
+  .header_heading span {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  //
+}
+
+/* Responsive Layout End */
