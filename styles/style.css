@@ -154,13 +154,110 @@ main {
   right: -50px;
   z-index: -1;
 }
-
 /* Community Section End */
+/* Corona Start  */
+.corona_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+}
+.corona_app img {
+  width: 100%;
+}
+.corona_app_shape img {
+  width: 30%;
+}
+.corona_app {
+  position: relative;
+}
+.corona_app_shape img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+.corona_app_shape img:nth-child(2) {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: -1;
+}
+.corona_app_shape img:nth-child(3) {
+  position: absolute;
+  bottom: 100px;
+  right: -10px;
+  z-index: -1;
+}
+.corona_text_title {
+  font-size: 2rem;
+}
+.corona_text_title span {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+.corona_text_description {
+  font-size: 1rem;
+}
+.corona_button {
+  display: inline-block;
+  width: 20%;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+/* Corona End */
 
 /* Responsive Layout Start */
 
 /* Small devices  */
 @media only screen and (max-width: 576px) {
+  /* Corona Section Start */
+  .corona_app_shape img {
+    display: none;
+  }
+
+  .corona_container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .corona_app img {
+    width: 100%;
+  }
+
+  .corona_text_title {
+    font-size: 2rem;
+  }
+  .corona_text_title span {
+    font-size: 2rem;
+    color: var(--secondary-color);
+  }
+  .corona_text_description {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .corona_button {
+    display: inline-block;
+    width: 40%;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  /* Corona Section End */
   /* Community Section Start */
   .community_circle {
     display: none;
@@ -231,6 +328,45 @@ main {
 
 /* Medium devices  */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+  /* Corona Section Start */
+  .corona_app_shape img {
+    display: none;
+  }
+  .corona_container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .corona_app img {
+    width: 100%;
+  }
+
+  .corona_text_title {
+    font-size: 2rem;
+  }
+  .corona_text_title span {
+    font-size: 2rem;
+    color: var(--secondary-color);
+  }
+  .corona_text_description {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+  }
+  .corona_button {
+    display: inline-block;
+    width: 40%;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  /* Corona Section End */
   /* Limit Section Start */
   .limit_container {
     flex-direction: column;
