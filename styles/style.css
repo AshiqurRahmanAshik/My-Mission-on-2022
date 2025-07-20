@@ -137,10 +137,35 @@ main {
 
 /* Limit Section End */
 
+/* Community Section Start */
+.community_container {
+  flex-direction: row-reverse;
+}
+.community_image {
+  position: relative;
+}
+.community_image img:nth-child(2) {
+  width: 30%;
+  height: auto;
+}
+.community_circle {
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  z-index: -1;
+}
+
+/* Community Section End */
+
 /* Responsive Layout Start */
 
 /* Small devices  */
 @media only screen and (max-width: 576px) {
+  /* Community Section Start */
+  .community_circle {
+    display: none;
+  }
+  /* Community Section End */
   /* Limit Section Start */
   .limit_container {
     flex-direction: column;
@@ -212,7 +237,7 @@ main {
     text-align: center;
     padding: 1rem;
   }
-  .mission_cards{
+  .mission_cards {
     padding: 1rem;
   }
 
