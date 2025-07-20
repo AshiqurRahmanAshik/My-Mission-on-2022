@@ -104,8 +104,7 @@ main {
   margin: 3rem 0;
 }
 .limit_image img {
-  width: 400px;
-  height: 400px;
+  width:100%;
 }
 .limit_image {
   position: relative;
@@ -213,7 +212,20 @@ main {
 }
 
 /* Corona End */
-
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
+}
+footer h4 {
+  font-family: lobster;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+footer span {
+  color: var(--secondary-color);
+}
 /* Responsive Layout Start */
 
 /* Small devices  */
@@ -269,7 +281,9 @@ main {
     text-align: center;
     padding: 1rem;
   }
-
+.limit_image img {
+  width:100%;
+}
   .limit_image :last-child {
     display: none;
   }
